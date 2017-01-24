@@ -32,7 +32,12 @@ public class ThreadInterleaveSharedData {
 
 		// Make the main thread sleep for 1000 ms
 		try {
-			Thread.currentThread().sleep(1000);
+
+			thread1.join();
+			thread2.join();
+			thread3.join();
+			thread4.join();
+
 		} catch (InterruptedException ie) {
 			System.exit(1);
 		}
