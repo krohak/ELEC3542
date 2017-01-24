@@ -1,7 +1,7 @@
 public class ThreadInterleaveDemo {
 
 	static class PrintOddThread extends Thread {
-	
+
 		// Print out odd numbers from 1 to 10
 		public void run() {
 			for (int i = 1; i <= 10; i = i + 2) {
@@ -43,12 +43,13 @@ public class ThreadInterleaveDemo {
 		thread2.start();
 
 		try {
-			Thread.currentThread().sleep(100);
+			thread1.join();
+			thread2.join();
 		} catch (InterruptedException ie) {
 			System.exit(1);
 		}
 
-		System.out.println();
+		System.out.println("end");
 	}
 
 }

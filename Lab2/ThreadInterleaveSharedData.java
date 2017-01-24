@@ -1,6 +1,7 @@
 public class ThreadInterleaveSharedData {
 
 	public static int sharedData = 0;
+	public static Object lock = new Object();
 
 	static class MyThread extends Thread {
 
@@ -10,11 +11,12 @@ public class ThreadInterleaveSharedData {
 			id = i;
 		}
 
-		public void run() {
+		public void run(){
+				synchronized (lock)	{
 			System.out.println("Thread " + id + " before update: " + sharedData++);
 			System.out.println("Thread " + id + " after update: " + sharedData);
 		}
-
+	}
 	}
 
 	public static void main(String[] args) {
