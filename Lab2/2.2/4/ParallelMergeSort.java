@@ -12,9 +12,22 @@ public class ParallelMergeSort {
 			second[i] = list[list.length / 2 + i];
 
 		// Sort each half, one by another thread, one by the main thread
-		/*
-			Insert your code here.
-		*/
+		Thread t1 = new Thread(new MergeSort(first));
+		//Thread t2 = new Thread(new MergeSort(second));
+		t1.start();
+		MergeSort.mergeSort(second);
+
+		try {
+
+			t1.join();
+
+
+		} catch (Exception ie) {
+			System.exit(1);
+		}
+
+
+
 
 		// Merge the halves together, overwriting the original array
 		int iFirst = 0, iSecond = 0, i = 0;

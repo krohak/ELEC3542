@@ -20,15 +20,22 @@ public class TimeParallelMergeSort {
 		}
 
 		int input[] = new int[size];
-		
+
 		for (int i = 0; i < size; i++) {
 			input[i] = (int) (Math.random() * 99999);
 		}
 
 		startTime = System.currentTimeMillis();
 		ParallelMergeSort.mergeSort(input);
+
 		endTime = System.currentTimeMillis();
 		timeNeeded = endTime - startTime;
+
+	///*
+		for (int i = 0; i < size; i++) {
+		System.out.println(input[i] + " ");
+	}
+//	*/
 
 		System.out.println("The time needed to sort " + size + " numbers is " + timeNeeded + " ms.");
 	}
