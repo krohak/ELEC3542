@@ -18,10 +18,12 @@ public class TimeMergeSort {
 			System.out.println("You have to input a valid number.");
 			System.exit(1);
 		}
+		
+		for (int j=5000000; j<=size; j+=1000000){
 
-		int input[] = new int[size];
+		int input[] = new int[j];
 
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < j; i++) {
 			input[i] = (int) (Math.random() * 99999);
 		}
 
@@ -30,7 +32,8 @@ public class TimeMergeSort {
 		endTime = System.currentTimeMillis();
 		timeNeeded = endTime - startTime;
 
-		System.out.println("The time needed to sort " + size + " numbers is " + timeNeeded + " ms.");
+		System.out.println("The time needed to sort " + j + " numbers is " + timeNeeded + " ms.");
+	}
 	}
 
 }
