@@ -29,11 +29,12 @@ public class ThreadInterleaveSharedData {
 		thread4.start();
 
 		// Make the main thread sleep for 1000 ms
+		/*
 		try {
 			Thread.currentThread().sleep(1000);
 		} catch (InterruptedException ie) {
 			System.exit(1);
-		}
+		}*/
 
 		System.out.println("Final value = " + sharedData);
 	}

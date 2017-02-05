@@ -19,7 +19,7 @@ public class TimeMergeSort {
 			System.exit(1);
 		}
 		
-		for (int j=5000000; j<=size; j+=1000000){
+		for (int j=40000000; j<=size; j+=1000000){
 
 		int input[] = new int[j];
 
