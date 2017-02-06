@@ -1,0 +1,11 @@
+The time needed to sort 5000000 numbers is 4988 ms.
+The time needed to sort 6000000 numbers is 7585 ms.
+The time needed to sort 7000000 numbers is 8555 ms.
+The time needed to sort 8000000 numbers is 7943 ms.
+The time needed to sort 9000000 numbers is 9008 ms.
+The time needed to sort 10000000 numbers is 10098 ms.
+The time needed to sort 11000000 numbers is 11630 ms.
+The time needed to sort 12000000 numbers is 14786 ms.
+The time needed to sort 13000000 numbers is 14660 ms.
+The time needed to sort 14000000 numbers is 19039 ms.
+The time needed to sort 15000000 numbers is 23898 ms.

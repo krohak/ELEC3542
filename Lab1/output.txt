@@ -1,2 +1,0 @@
-The time needed to sort 5000000 numbers is 4868 ms.
-The time needed to sort 6000000 numbers is 5839 ms.
