@@ -9,10 +9,6 @@ arr= list;
 }
 
 
-
-// Swap the elements in arr
-
-
 public void run() {
 
 

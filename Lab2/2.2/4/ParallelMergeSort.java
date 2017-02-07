@@ -13,7 +13,6 @@ public class ParallelMergeSort {
 
 		// Sort each half, one by another thread, one by the main thread
 		Thread t1 = new Thread(new MergeSort(first));
-		//Thread t2 = new Thread(new MergeSort(second));
 		t1.start();
 		MergeSort.mergeSort(second);
 
