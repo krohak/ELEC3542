@@ -1,32 +1,5 @@
 public class SwapArrEltRunnableDemo {
 
-	static class SwapArrEltRunnable implements Runnable{
-
-private int[] arr;
-
-
-public SwapArrEltRunnable(int[] list){
-	arr= list;
-
-}
-
-
-
-// Swap the elements in arr
-
-
-public void run() {
-
-
-	int temp = arr[0];
-	arr[0] = arr[1];
-	arr[1] = temp;
-
-					}
-
-	}
-
-
 
 	public static void main(String[] args) {
 
