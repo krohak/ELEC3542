@@ -1,24 +1,4 @@
-public class MergeSort implements Runnable {
-
-
-      private int[] arr;
-      //public static Object lock = new Object();
-
-      public MergeSort(int[] list){
-      	arr= list;
-
-      }
-
-
-      public void run(){
-
-        mergeSort(arr);
-
-
-    }
-
-
-
+public class MergeSort {
 
     public static void mergeSort(int[] list) {
         if (list.length <= 1) return;

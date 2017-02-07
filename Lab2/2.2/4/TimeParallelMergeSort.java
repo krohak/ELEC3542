@@ -11,14 +11,16 @@ public class TimeParallelMergeSort {
 			System.exit(1);
 		}
 
-		int size = 0;
+		//int size = 0;
+		int j = 0;
 		try {
-			size = Integer.parseInt(args[0]);
+		//	size = Integer.parseInt(args[0]);
+			j = Integer.parseInt(args[0]);
 		} catch (NumberFormatException e) {
 			System.out.println("You have to input a valid number.");
 			System.exit(1);
 		}
-		for (int j = 5000000; j<=size; j+= 1000000) {
+	//	for (int j = 5000000; j<=size; j+= 1000000) {
 
 		int input[] = new int[j];
 
@@ -32,13 +34,13 @@ public class TimeParallelMergeSort {
 		endTime = System.currentTimeMillis();
 		timeNeeded = endTime - startTime;
 
-	/*
-		for (int i = 0; i < size; i++) {
+/*
+		for (int i = 0; i < j; i++) {
 		System.out.println(input[i] + " ");
-	}
-	*/
+	}  */
+
 
 		System.out.println("The time needed to sort " + j + " numbers is " + timeNeeded + " ms.");
-	}
+//	}
 }
 }
