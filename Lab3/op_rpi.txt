@@ -1,0 +1,16 @@
+The time needed to sort 20000000 numbers is 50832 ms.
+The time needed to sort 20000000 numbers is 44578 ms.
+The time needed to sort 20000000 numbers is 55717 ms.
+The time needed to sort 20000000 numbers is 56533 ms.
+The time needed to sort 20000000 numbers is 61852 ms.
+The time needed to sort 20000000 numbers is 80177 ms.
+The time needed to sort 20000000 numbers is 78009 ms.
+The time needed to sort 20000000 numbers is 85243 ms.
+The time needed to sort 20000000 numbers is 114783 ms.
+The time needed to sort 20000000 numbers is 109130 ms.
+The time needed to sort 20000000 numbers is 106546 ms.
+The time needed to sort 20000000 numbers is 121036 ms.
+The time needed to sort 20000000 numbers is 124799 ms.
+The time needed to sort 20000000 numbers is 145586 ms.
+The time needed to sort 20000000 numbers is 137341 ms.
+The time needed to sort 20000000 numbers is 145291 ms.
