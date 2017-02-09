@@ -29,7 +29,7 @@ public class TimeRemoteMergeSort {
 		}
 
 		int input[] = new int[size];
-		
+
 		for (int i = 0; i < size; i++) {
 			input[i] = (int) (Math.random() * 99999);
 		}
