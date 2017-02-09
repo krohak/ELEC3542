@@ -38,7 +38,8 @@ public class TimeRemoteMergeSort {
 		input = RemoteMergeSort.mergeSort(input);
 		endTime = System.currentTimeMillis();
 		timeNeeded = endTime - startTime;
-
+		
+		System.out.println(verify(input));
 		System.out.println("The time needed to sort " + size + " numbers is " + timeNeeded + " ms.");
 	}
 
