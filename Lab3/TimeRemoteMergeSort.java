@@ -28,9 +28,11 @@ public class TimeRemoteMergeSort {
 			System.exit(1);
 		}
 
-		int input[] = new int[size];
 
-		for (int i = 0; i < size; i++) {
+   for (int j = 5000000; j<=size; j+= 1000000) {
+		int input[] = new int[j];
+
+		for (int i = 0; i < j; i++) {
 			input[i] = (int) (Math.random() * 99999);
 		}
 
@@ -38,9 +40,11 @@ public class TimeRemoteMergeSort {
 		input = RemoteMergeSort.mergeSort(input);
 		endTime = System.currentTimeMillis();
 		timeNeeded = endTime - startTime;
-		
+
 		System.out.println(verify(input));
 		System.out.println("The time needed to sort " + size + " numbers is " + timeNeeded + " ms.");
+
+	}
 	}
 
 }
