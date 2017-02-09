@@ -27,7 +27,7 @@ public class ServerReceive {
 			endTime = System.currentTimeMillis();
 			timeNeeded = endTime - startTime;
 
-			System.out.println("The time needed to sort is "  + timeNeeded + " ms on the Server");
+			System.out.println("The time needed to sort " + s.length + " is "  + timeNeeded + " ms on the Server");
 
 			out.writeObject(s);
 			out.flush();
