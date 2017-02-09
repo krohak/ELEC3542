@@ -9,7 +9,7 @@ public class RemoteMergeSort {
 		ObjectInputStream in = null;
 
 		try {
-			clientSocket = new Socket("localhost", 1234);
+			clientSocket = new Socket("172.31.119.148", 1234);
 
 			out = new ObjectOutputStream(clientSocket.getOutputStream());
 			in = new ObjectInputStream(clientSocket.getInputStream());
