@@ -1,0 +1,16 @@
+The time needed to sort 5000000 is 995 ms on the Server
+The time needed to sort 6000000 is 1147 ms on the Server
+The time needed to sort 7000000 is 1322 ms on the Server
+The time needed to sort 8000000 is 1516 ms on the Server
+The time needed to sort 9000000 is 1912 ms on the Server
+The time needed to sort 10000000 is 2246 ms on the Server
+The time needed to sort 11000000 is 2099 ms on the Server
+The time needed to sort 12000000 is 2311 ms on the Server
+The time needed to sort 13000000 is 2504 ms on the Server
+The time needed to sort 14000000 is 2686 ms on the Server
+The time needed to sort 15000000 is 3197 ms on the Server
+The time needed to sort 16000000 is 3151 ms on the Server
+The time needed to sort 17000000 is 3287 ms on the Server
+The time needed to sort 18000000 is 3477 ms on the Server
+The time needed to sort 19000000 is 3678 ms on the Server
+The time needed to sort 20000000 is 3887 ms on the Server
