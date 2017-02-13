@@ -1,0 +1,45 @@
+The memory used after creating the input array is: 20223032
+The memory used for sorting is: 60223352
+The time needed to sort 5000000 numbers is 996 ms.
+The memory used after creating the input array is: 24223032
+The memory used for sorting is: 72223344
+The time needed to sort 6000000 numbers is 1169 ms.
+The memory used after creating the input array is: 28223032
+The memory used for sorting is: 84223344
+The time needed to sort 7000000 numbers is 1543 ms.
+The memory used after creating the input array is: 32223032
+The memory used for sorting is: 96223336
+The time needed to sort 8000000 numbers is 1662 ms.
+The memory used after creating the input array is: 36223032
+The memory used for sorting is: 108223392
+The time needed to sort 9000000 numbers is 1776 ms.
+The memory used after creating the input array is: 40223032
+The memory used for sorting is: 120223384
+The time needed to sort 10000000 numbers is 1971 ms.
+The memory used after creating the input array is: 44223032
+The memory used for sorting is: 132223376
+The time needed to sort 11000000 numbers is 2153 ms.
+The memory used after creating the input array is: 48223032
+The memory used for sorting is: 144223376
+The time needed to sort 12000000 numbers is 2350 ms.
+The memory used after creating the input array is: 52223032
+The memory used for sorting is: 156223384
+The time needed to sort 13000000 numbers is 2575 ms.
+The memory used after creating the input array is: 56223032
+The memory used for sorting is: 168223376
+The time needed to sort 14000000 numbers is 2794 ms.
+The memory used after creating the input array is: 60223032
+The memory used for sorting is: 180223368
+The time needed to sort 15000000 numbers is 3127 ms.
+The memory used after creating the input array is: 64223032
+The memory used for sorting is: 192223368
+The time needed to sort 16000000 numbers is 3160 ms.
+The memory used after creating the input array is: 68223032
+The memory used for sorting is: 204223408
+The time needed to sort 17000000 numbers is 3392 ms.
+The memory used after creating the input array is: 72223032
+The memory used for sorting is: 216223424
+The time needed to sort 18000000 numbers is 3552 ms.
+The memory used after creating the input array is: 76223032
+The memory used for sorting is: 228223416
+The time needed to sort 19000000 numbers is 3795 ms.
