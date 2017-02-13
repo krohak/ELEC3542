@@ -42,7 +42,7 @@ public class TimeRemoteMergeSort {
 		timeNeeded = endTime - startTime;
 
 		//System.out.println(verify(input));
-		System.out.println("The time needed to sort " + size + " numbers is " + timeNeeded + " ms.");
+		System.out.println("The time needed to sort " + j + " numbers is " + timeNeeded + " ms.");
 
 	}
 	}
