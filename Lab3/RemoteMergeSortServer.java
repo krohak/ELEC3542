@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class ServerReceive {
+public class RemoteMergeSortServer {
 
 
 	public static void main(String[] args) throws Exception {
