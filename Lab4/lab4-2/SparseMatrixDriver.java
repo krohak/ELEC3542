@@ -37,9 +37,9 @@ public class SparseMatrixDriver {
 
 
         numRow = numCol = size;
-        //ListMatrix m = new ListMatrix(numRow, numCol);
-         ArrayMatrix m = new ArrayMatrix(numRow, numCol);
-         System.out.println("The memory used after creating the " + numRow +"x" + numCol + " input array is: " + MeasureMemory.memoryUsed());
+        ListMatrix m = new ListMatrix(numRow, numCol);
+        // ArrayMatrix m = new ArrayMatrix(numRow, numCol);
+
          /*
         m.addElt(2, 3, 4);
         m.addElt(1, 1, 5);
@@ -48,7 +48,7 @@ public class SparseMatrixDriver {
         m.addElt(2, 2, 3);
         */
          batchAddElt(batch, m);
-
+         System.out.println("The memory used after creating the " + numRow +"x" + numCol + " input array is: " + MeasureMemory.memoryUsed());
 
         startTime = System.currentTimeMillis();
 
