@@ -1,0 +1,25 @@
+The memory used after creating the 100x100 input array is: 264960
+Row: 100; Col: 100
+[2, 31,38] [3, 82,82] [40, 47,85] [41, 20,54] [50, 7,29] [53, 36,5] [69, 72,48] [79, 56,33] [88, 16,41] [98, 63,41] 
+The time needed to print 100x100 Array is 0 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 500x500 input array is: 1232960
+Row: 500; Col: 500
+[5, 429,4] [39, 25,62] [97, 35,13] [124, 235,49] [191, 284,55] [197, 168,84] [277, 450,90] [358, 104,52] [382, 124,70] [435, 400,20] 
+The time needed to print 500x500 Array is 5 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 1000x1000 input array is: 4242960
+Row: 1000; Col: 1000
+[33, 587,78] [71, 0,78] [163, 60,63] [197, 116,41] [286, 416,68] [419, 328,92] [443, 678,44] [627, 117,44] [636, 733,43] [854, 505,16] 
+The time needed to print 1000x1000 Array is 12 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 2000x2000 input array is: 16262960
+Row: 2000; Col: 2000
+[149, 742,92] [982, 1848,88] [994, 659,48] [1241, 584,14] [1321, 105,31] [1532, 1988,83] [1559, 1062,6] [1642, 1791,12] [1771, 362,36] [1854, 343,90] 
+The time needed to print 2000x2000 Array is 20 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 5000x5000 input array is: 100321944
+Row: 5000; Col: 5000
+[55, 4666,27] [107, 90,4] [468, 4167,38] [2490, 1335,80] [2831, 4243,72] [2959, 2590,14] [4077, 3886,26] [4726, 384,26] [4934, 4588,45] [4979, 1299,6] 
+The time needed to print 5000x5000 Array is 73 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.

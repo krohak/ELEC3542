@@ -1,0 +1,69 @@
+The memory used after creating the 100x100 input array is: 222960
+Row: 100; Col: 100
+18 : [11, 52] --> 
+34 : [72, 4] --> [83, 87] --> 
+35 : [91, 96] --> 
+42 : [32, 21] --> 
+45 : [24, 90] --> 
+47 : [48, 54] --> 
+68 : [28, 97] --> 
+86 : [82, 72] --> 
+91 : [38, 70] --> 
+The time needed to print 100x100 Array is 0 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 500x500 input array is: 222960
+Row: 500; Col: 500
+35 : [193, 19] --> 
+67 : [38, 56] --> 
+104 : [13, 83] --> 
+211 : [9, 79] --> 
+232 : [263, 80] --> 
+240 : [0, 30] --> 
+296 : [480, 72] --> 
+317 : [127, 48] --> 
+329 : [154, 27] --> 
+413 : [159, 25] --> 
+The time needed to print 500x500 Array is 0 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 1000x1000 input array is: 222960
+Row: 1000; Col: 1000
+9 : [68, 21] --> 
+149 : [305, 19] --> 
+245 : [488, 32] --> 
+254 : [528, 40] --> 
+305 : [868, 63] --> 
+341 : [864, 52] --> 
+401 : [685, 22] --> 
+479 : [336, 53] --> 
+567 : [168, 96] --> 
+665 : [56, 45] --> 
+The time needed to print 1000x1000 Array is 1 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 2000x2000 input array is: 222960
+Row: 2000; Col: 2000
+124 : [1427, 68] --> 
+840 : [1744, 82] --> 
+1315 : [491, 87] --> 
+1409 : [1015, 49] --> 
+1488 : [1054, 35] --> 
+1544 : [543, 18] --> 
+1620 : [1855, 43] --> 
+1918 : [1576, 4] --> 
+1955 : [486, 52] --> 
+1961 : [1158, 28] --> 
+The time needed to print 2000x2000 Array is 1 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
+The memory used after creating the 5000x5000 input array is: 222960
+Row: 5000; Col: 5000
+293 : [2601, 99] --> 
+1446 : [4973, 49] --> 
+1974 : [2703, 86] --> 
+2038 : [3511, 95] --> 
+2090 : [4798, 10] --> 
+2446 : [1340, 36] --> 
+3528 : [3329, 70] --> 
+4443 : [4967, 39] --> 
+4476 : [49, 94] --> 
+4492 : [3712, 69] --> 
+The time needed to print 5000x5000 Array is 0 ms.The sum of column 1 is: 0
+The time needed to print the sum of column 1 is 0 ms.
