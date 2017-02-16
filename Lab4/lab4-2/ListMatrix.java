@@ -51,7 +51,7 @@ public class ListMatrix extends MyMatrix {
             }
 
             iNode = iNode.next;
-            System.out.println();
+            //System.out.println();
         }
 
     }
