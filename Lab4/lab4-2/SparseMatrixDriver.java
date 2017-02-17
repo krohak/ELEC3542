@@ -37,9 +37,9 @@ public class SparseMatrixDriver {
 
 
         numRow = numCol = size;
-        ListMatrix m = new ListMatrix(numRow, numCol);
-        //ArrayMatrix m = new ArrayMatrix(numRow, numCol);
-        //batch = (int) ((batch/100)*size);
+        //ListMatrix m = new ListMatrix(numRow, numCol);
+        ArrayMatrix m = new ArrayMatrix(numRow, numCol);
+        batch = (int) ((batch*size*size)/100);
          /*
         m.addElt(2, 3, 4);
         m.addElt(1, 1, 5);
@@ -68,6 +68,7 @@ public class SparseMatrixDriver {
         timeNeeded = endTime - startTime;
         System.out.println("The sum of column 1 is: " + sumOfCol);
         System.out.println("The time needed to print the sum of column 1 is " + timeNeeded + " ms.");
+        //System.out.println(batch);
     //  */
     }
 
