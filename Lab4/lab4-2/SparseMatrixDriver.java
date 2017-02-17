@@ -37,8 +37,8 @@ public class SparseMatrixDriver {
 
 
         numRow = numCol = size;
-        //ListMatrix m = new ListMatrix(numRow, numCol);
-        ArrayMatrix m = new ArrayMatrix(numRow, numCol);
+        ListMatrix m = new ListMatrix(numRow, numCol);
+        //ArrayMatrix m = new ArrayMatrix(numRow, numCol);
         batch = (int) ((batch*size*size)/100);
          /*
         m.addElt(2, 3, 4);

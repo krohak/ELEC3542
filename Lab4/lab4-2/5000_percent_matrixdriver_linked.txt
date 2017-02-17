@@ -1,0 +1,7 @@
+The memory used after creating the 5000x5000 input array is: 40374968
+The memory used after creating the 5000x5000 input array is: 80367320
+The memory used after creating the 5000x5000 input array is: 120360152
+The memory used after creating the 5000x5000 input array is: 160351928
+The memory used after creating the 5000x5000 input array is: 200343384
+The memory used after creating the 5000x5000 input array is: 240335800
+The memory used after creating the 5000x5000 input array is: 280325976
