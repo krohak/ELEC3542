@@ -52,11 +52,11 @@ public class SparseMatrixDriver {
 
         startTime = System.currentTimeMillis();
 
-        m.printMatrix();
+        //m.printMatrix();
 
         endTime = System.currentTimeMillis();
         timeNeeded = endTime - startTime;
-        System.out.print("The time needed to print " + numRow +"x" + numCol + " Array is " + timeNeeded + " ms.");
+        //System.out.print("The time needed to print " + numRow +"x" + numCol + " Array is " + timeNeeded + " ms.");
 
       //  /*
         //int largestElt = m.findLargestElt();
@@ -66,8 +66,8 @@ public class SparseMatrixDriver {
         int sumOfCol = m.sumColumn(1);
         endTime = System.currentTimeMillis();
         timeNeeded = endTime - startTime;
-        System.out.println("The sum of column 1 is: " + sumOfCol);
-        System.out.println("The time needed to print the sum of column 1 is " + timeNeeded + " ms.");
+        //System.out.println("The sum of column 1 is: " + sumOfCol);
+        //System.out.println("The time needed to print the sum of column 1 is " + timeNeeded + " ms.");
         //System.out.println(batch);
     //  */
     }
