@@ -1,0 +1,14 @@
+The memory used after creating the 2000x2000 input array is: 6685272
+The memory used after creating the 2000x2000 input array is: 13083040
+The memory used after creating the 2000x2000 input array is: 19480000
+The memory used after creating the 2000x2000 input array is: 25876256
+The memory used after creating the 2000x2000 input array is: 32272760
+The memory used after creating the 2000x2000 input array is: 38669784
+The memory used after creating the 2000x2000 input array is: 45065176
+The memory used after creating the 2000x2000 input array is: 51464440
+The memory used after creating the 2000x2000 input array is: 57860280
+The memory used after creating the 2000x2000 input array is: 64257880
+The memory used after creating the 2000x2000 input array is: 70639696
+The memory used after creating the 2000x2000 input array is: 77036848
+The memory used after creating the 2000x2000 input array is: 83434448
+The memory used after creating the 2000x2000 input array is: 89828208
