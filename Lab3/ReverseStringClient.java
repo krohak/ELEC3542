@@ -6,7 +6,7 @@ public class ReverseStringClient {
 
 	public static void main(String[] args) throws Exception {
 		// Bind the socket to the server with the appropriate port
-		Socket socket = new Socket("172.31.59.211", 3333);
+		Socket socket = new Socket("localhost", 3333);
 
 		// Setup I/O streams
 		ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
