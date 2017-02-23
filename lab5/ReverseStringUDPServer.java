@@ -25,7 +25,7 @@ public class ReverseStringUDPServer {
 
         while (true) {
             // Accept an incoming packet
-            receiveData = new byte[1024];
+            receiveData = new byte[10];
             receivePacket = new DatagramPacket(receiveData, receiveData.length);
             serverSocket.receive(receivePacket);
 
