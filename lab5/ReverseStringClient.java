@@ -10,7 +10,7 @@ public class ReverseStringClient {
 		startTime = System.currentTimeMillis();
 
 		// Bind the socket to the server with the appropriate port
-		Socket socket = new Socket("localhost", 1234);
+		Socket socket = new Socket("172.31.59.61", 1234);
 
 		// Setup I/O streams
 		ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());

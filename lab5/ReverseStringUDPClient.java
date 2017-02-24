@@ -19,7 +19,7 @@ public class ReverseStringUDPClient {
         sendData = s.getBytes();
 
         // Get the IP address as an InetAddress object
-        InetAddress addr = InetAddress.getByName("localhost");
+        InetAddress addr = InetAddress.getByName("172.31.59.61");
 
 	startTime = System.currentTimeMillis();
         // Create the outgoing datagram
@@ -30,10 +30,11 @@ public class ReverseStringUDPClient {
         // Accept an incoming packet
         receivePacket = new DatagramPacket(receiveData, receiveData.length);
         clientSocket.receive(receivePacket);
+        String result = new String(receivePacket.getData());
+
 	endTime = System.currentTimeMillis();
 	timeNeeded =  endTime - startTime;
 
-        String result = new String(receivePacket.getData());
 
         System.out.println("The result is: " + result);
 	System.out.println("Time taken is: " + timeNeeded);
