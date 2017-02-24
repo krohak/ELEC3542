@@ -9,7 +9,7 @@ public class ReverseStringUDPClient {
         byte[] receiveData = new byte[1024];
         byte[] sendData;
         DatagramPacket sendPacket, receivePacket;
-
+	long startTime, endTime, timeNeeded;
         // Ask for user input
         System.out.print("Enter the string you want to reverse: ");
         Scanner scan = new Scanner(System.in);
@@ -21,6 +21,7 @@ public class ReverseStringUDPClient {
         // Get the IP address as an InetAddress object
         InetAddress addr = InetAddress.getByName("localhost");
 
+	startTime = System.currentTimeMillis();
         // Create the outgoing datagram
         sendPacket = new DatagramPacket(sendData, sendData.length, addr, 1234);
         // Send out the packet using the socket
@@ -29,10 +30,13 @@ public class ReverseStringUDPClient {
         // Accept an incoming packet
         receivePacket = new DatagramPacket(receiveData, receiveData.length);
         clientSocket.receive(receivePacket);
+	endTime = System.currentTimeMillis();
+	timeNeeded =  endTime - startTime;
 
         String result = new String(receivePacket.getData());
 
         System.out.println("The result is: " + result);
+	System.out.println("Time taken is: " + timeNeeded);
 
         clientSocket.close();
     }
