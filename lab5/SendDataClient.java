@@ -11,10 +11,21 @@ public class SendDataClient {
     }
 
     public static void main(String[] args) throws Exception {
+
+	long start_time = System.currentTimeMillis();
+	long time =0;
+
+	while (true){
+	
+	if (time==1000){
+	System.out.println(System.currentTimeMillis());
         DatagramSocket clientSocket = new DatagramSocket();
         byte[] sendData;
         DatagramPacket outgoingPacket;
 
+
+
+	
         MyData data = genData();
 
         ByteArrayOutputStream byteOS = new ByteArrayOutputStream();
@@ -28,6 +39,17 @@ public class SendDataClient {
         clientSocket.send(outgoingPacket);
 
         clientSocket.close();
+
+	start_time = System.currentTimeMillis();
+
+		}
+	long stop_time = System.currentTimeMillis();
+	time = stop_time - start_time;
+	
+	}
+
+
     }
+
 
 }
