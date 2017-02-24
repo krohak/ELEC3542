@@ -9,6 +9,8 @@ public class DataServer {
         DatagramPacket incomingPacket;
         MyData data;
         byte[] incomingData;
+	float total=0;
+	int counter=0;
 
         while (true) {
             incomingData = new byte[1024];
@@ -19,7 +21,11 @@ public class DataServer {
             ObjectInputStream is = new ObjectInputStream(new ByteArrayInputStream(dataInByte));
 
             data = (MyData) is.readObject();
-            System.out.println(data);
+  	    total=total+data.getValue();
+            counter++;
+	    float average = total/counter;
+	    System.out.println(data);
+	    System.out.println("The average of the reports is " + average);
         }
     }
 
