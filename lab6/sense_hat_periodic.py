@@ -6,7 +6,8 @@ import datetime
 def log_temperature_to_file(temperature,temp):
 	temp_log =open("temperature.txt", "a")
 	temp_log.write(temp)
-	temp_log.write(" Temperature:%.2f\n" % temperature)
+	temp_log.write(" / Temperature:%.2f" % temperature)
+	temp_log.write(" / T:%.2f\n" % temperature)
 	temp_log.close()
 
 sense=SenseHat()
