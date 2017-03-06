@@ -32,7 +32,7 @@ public class TokenRingDevice {
             }
 
             // MODIFY THE FILE PATH IF NECESSARY
-            Runtime.getRuntime().exec("python3 /home/pi/Downloads/print_hello.py");
+            Runtime.getRuntime().exec("python3 print_hello.py");
             Thread.sleep(2000);
 
             // Prepare the list of devices for sending to the next device

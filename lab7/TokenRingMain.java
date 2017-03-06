@@ -13,7 +13,7 @@ public class TokenRingMain {
         hostIp[0] = "192.168.1.100";
         hostIp[1] = "192.168.1.101";
         hostIp[2] = "192.168.1.102";
-        hostIp[3] = "192.168.1.103";
+        //hostIp[3] = "192.168.1.103";
 
         String nextHop = hostIp[0];
         Socket nextHopSocket = new Socket(nextHop, 4444);
