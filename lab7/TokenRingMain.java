@@ -9,7 +9,7 @@ public class TokenRingMain {
         Integer token = new Integer(100);
 
         // hostIp keeps all the IPs of other devices, modify according to your own network
-        String hostIp[] = new String[4];
+        String hostIp[] = new String[3];
         hostIp[0] = "192.168.1.100";
         hostIp[1] = "192.168.1.101";
         hostIp[2] = "192.168.1.102";
