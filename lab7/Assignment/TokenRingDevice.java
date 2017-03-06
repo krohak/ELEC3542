@@ -40,7 +40,9 @@ public class TokenRingDevice {
             BufferedReader bufIn =new BufferedReader(new InputStreamReader(p.getInputStream()));
             String pythonOutput = bufIn.readLine();
 
-            token = (token + Float.parseFloat(pythonOutput))/2;
+            if (token!=0.0){
+            token = (token + Float.parseFloat(pythonOutput))/2;}
+            else{token =  Float.parseFloat(pythonOutput);}
 
             // Prepare the list of devices for sending to the next device
             String[] ipListOut = new String[ipListIn.length - 1];
