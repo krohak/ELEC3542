@@ -28,7 +28,10 @@ public class TokenRingMain {
         Socket incomingSocket;
         while (true) {
             incomingSocket = waitForTokenSocket.accept();
-            System.out.println("Token received");
+            ObjectInputStream in = new ObjectInputStream(incomingSocket.getInputStream());
+
+            token = (Float) in.readObject();
+            System.out.println("Token received " + token);
 
             break;
         }
