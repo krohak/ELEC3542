@@ -25,10 +25,10 @@ public class TokenRingDevice {
             String nextHop;
             if (ipListIn.length > 1) { // The next hop is another device
                 nextHop = ipListIn[1];
-                System.out.println("I received the token " + token + ", and will pass it to " + ipListIn[1]);
+                System.out.println("I received the previous average temperature " + token + ", and will pass it to " + ipListIn[1]);
             } else { // this is the last device in the ring
                 nextHop = "192.168.1.1";
-                System.out.println("I received the token " + token + ", and will pass it to router");
+                System.out.println("I received the previous average temperature " + token + ", and will pass it to router");
             }
 
             // MODIFY THE FILE PATH IF NECESSARY
@@ -40,9 +40,14 @@ public class TokenRingDevice {
             BufferedReader bufIn =new BufferedReader(new InputStreamReader(p.getInputStream()));
             String pythonOutput = bufIn.readLine();
 
+            System.out.println("Measured temperature " + pythonOutput);
+
             if (token!=0.0){
             token = (token + Float.parseFloat(pythonOutput))/2;}
             else{token =  Float.parseFloat(pythonOutput);}
+
+
+            System.out.println("New avergae temperature " + token);
 
             // Prepare the list of devices for sending to the next device
             String[] ipListOut = new String[ipListIn.length - 1];

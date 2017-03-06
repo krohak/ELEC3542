@@ -33,7 +33,7 @@ public class TokenRingMain {
 	    String[] ipListIn = (String[]) in.readObject();
 
             token = (Float) in.readObject();
-            System.out.println("Token received " + token);
+            System.out.println("Average Temperature " + token);
 
             break;
         }
