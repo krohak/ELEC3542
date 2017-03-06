@@ -30,6 +30,8 @@ public class TokenRingMain {
             incomingSocket = waitForTokenSocket.accept();
             ObjectInputStream in = new ObjectInputStream(incomingSocket.getInputStream());
 
+	    String[] ipListIn = (String[]) in.readObject();
+
             token = (Float) in.readObject();
             System.out.println("Token received " + token);
 
