@@ -7,4 +7,4 @@ temperature=sense.get_temperature()
 
 print(temperature)
 
-sense.show_message(temperature)
+sense.show_message(str(temperature))
