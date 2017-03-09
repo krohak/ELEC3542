@@ -42,10 +42,19 @@ public class TokenRingDevice {
 
             System.out.println("Measured temperature " + pythonOutput);
 
-            if (token!=0.0){
-            token = (token + Float.parseFloat(pythonOutput))/2;}
-            else{token =  Float.parseFloat(pythonOutput);}
+            if (token==0.0){
 
+              token =  Float.parseFloat(pythonOutput);
+            }
+
+            else{
+              //calculate the Average
+              int number=1;
+              for (number=1; number<=3-ipListIn.length; number++ );
+
+              token = (number*token + Float.parseFloat(pythonOutput))/(number+1);
+
+            }
 
             System.out.println("New avergae temperature " + token);
 
