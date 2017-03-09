@@ -36,13 +36,11 @@ while(1):
     	ID=req.text
     	if ID=="0":
         	ID="FAILED"
-    	#print(req.status_code)
-    	#print(req.json())
+    	
 
+		timestring="["+ str(datetime.datetime.now())+"]"
 
-	timestring="["+ str(datetime.datetime.now())+"]"
-
-	log_temperature_to_file(temperature,humidity,pressure,ID,timestring)
+		log_temperature_to_file(temperature,humidity,pressure,ID,timestring)
 
 	except Exception as e:
 		print 'Run-time error:', e
