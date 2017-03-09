@@ -50,7 +50,7 @@ public class TokenRingDevice {
             else{
               //calculate the Average
               int number=1;
-              for (number=1; number<=3-ipListIn.length; number++ );
+              for (number=1; number<3-ipListIn.length; number++ );
 
               token = (number*token + Float.parseFloat(pythonOutput))/(number+1);
 
