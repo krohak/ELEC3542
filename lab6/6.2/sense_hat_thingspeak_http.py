@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+'''
+Public Channel:
+https://thingspeak.com/channels/233346
+'''
 from sense_hat import SenseHat
 import time
 import datetime
 import requests
 
 api_key = ''
-#https://thingspeak.com/channels/233346
+
 
 def log_temperature_to_file(temperature,humidity,pressure,ID,timestring):
 	temp_log =open("sense_hat_thingspeak_http.txt", "a")
@@ -19,7 +23,9 @@ def log_temperature_to_file(temperature,humidity,pressure,ID,timestring):
 sense=SenseHat()
 
 while(1):
-	temperature=sense.get_temperature()
+
+	try:
+		temperature=sense.get_temperature()
     	humidity=sense.get_humidity()
     	pressure=sense.get_pressure()
 
@@ -37,5 +43,8 @@ while(1):
 	timestring="["+ str(datetime.datetime.now())+"]"
 
 	log_temperature_to_file(temperature,humidity,pressure,ID,timestring)
+
+	except Exception as e:
+		print 'Run-time error:', e
 
 	time.sleep(300)
