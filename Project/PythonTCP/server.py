@@ -17,7 +17,7 @@ while True:
 	if not data:
 		break
 	conn.sendall(data)
-	print(str(data))
+	print(addr[0]+","+ str(data))
 
 conn.close()
 mysock.close()
