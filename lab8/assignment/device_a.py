@@ -27,10 +27,11 @@ while True:
 	try:
 		temperature=sense.get_temperature()
 		humidity=sense.get_humidity()
-		print(temperature)
+		print("%.2f"%temperature)
+		print("%.2f"%humidity)
 
-		client.publish(topic1, payload=temperature, qos=0, retain=False)
-
+		client.publish(topic1, payload="%.2f"%temperature, qos=0, retain=False)
+		client.publish(topic2, payload="%.2f"%humidity, qos=0, retain=False)
 
 	except Exception as e:
 		print ("Run-time error: %s"%e)
