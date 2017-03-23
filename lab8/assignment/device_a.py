@@ -20,6 +20,7 @@ client = mqtt.Client()
 
 client.connect(hostname, port=port)
 
+# start threaded interface to the network loop
 client.loop_start()
 
 while True:
