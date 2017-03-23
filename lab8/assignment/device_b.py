@@ -1,6 +1,8 @@
 import paho.mqtt.client as mqtt
 from sense_hat import SenseHat
 import time
+import numled
+colors = [(0,255, 0), (255, 255, 255)]
 
 hostname = "iot.eclipse.org" # Sandbox broker
 port = 1883 # Default port for unencrypted MQTT
@@ -20,8 +22,10 @@ def on_connect(client, userdata, rc):
 
 def on_message(client, userdata, message):
         print("Received message on %s: %s (QoS = %s)" % (message.topic, message.payload.decode("utf-8"), str(message.qos)))
-        sense.show_message(message.payload.decode("utf-8"),text_colour=[0, 255, 0])
-
+		value = int(float(message.payload.decode("utf-8")))
+		numled.show_number(sense, value, colors[0])
+		time.sleep(1)
+		numled.show_number(sense, value, colors[1])
 
 def on_disconnect(client, userdata, rc):
 	if rc != 0:
