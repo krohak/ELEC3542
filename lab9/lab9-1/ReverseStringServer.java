@@ -1,5 +1,9 @@
 import java.io.*;
 import java.net.*;
+import java.io.Serializable;
+
+import javax.crypto.SecretKey;
+import javax.crypto.SealedObject;
 
 public class ReverseStringServer {
 
@@ -16,6 +20,10 @@ public class ReverseStringServer {
 	}
 
 	public static void main(String[] args) throws Exception {
+
+		AESEncryption bob = new AESEncryption();
+		SecretKey bobKey = = bob.getSecretEncryptionKey("alice&bob");
+		
 		// Create server socket listening on port
 		int port = 3333;
 		ServerSocket serverSocket = new ServerSocket(port);
@@ -31,11 +39,17 @@ public class ReverseStringServer {
 
 			String s = (String) in.readObject();
 
-			String result = reverse(s);
 
-			out.writeObject(result);
+			String decryptedText = (String) bob.decrypt(s, bobKey);
+
+
+			String result = reverse(decryptedText);
+
+			SealedObject cipherObject = bob.encrypt(result, bobKey);
+
+			out.writeObject(String(cipherObject));
 			out.flush();
-			
+
 			out.close();
 			in.close();
 			clientSocket.close();
