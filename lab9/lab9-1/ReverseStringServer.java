@@ -22,8 +22,8 @@ public class ReverseStringServer {
 	public static void main(String[] args) throws Exception {
 
 		AESEncryption bob = new AESEncryption();
-		SecretKey bobKey = = bob.getSecretEncryptionKey("alice&bob");
-		
+		SecretKey bobKey = bob.getSecretEncryptionKey("alice&bob");
+
 		// Create server socket listening on port
 		int port = 3333;
 		ServerSocket serverSocket = new ServerSocket(port);
