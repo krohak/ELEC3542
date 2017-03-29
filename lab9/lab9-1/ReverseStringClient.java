@@ -26,10 +26,10 @@ public class ReverseStringClient {
 		s = scan.nextLine();
 
 		SealedObject cipherObject = alice.encrypt(s, aliceKey);
-		out.writeObject(String(cipherObject));
+		out.writeObject((cipherObject));
 		out.flush();
 
-		String result = (String) in.readObject();
+		SealedObject result =  (SealedObject)in.readObject();
 		String decryptedText = (String) alice.decrypt(result, aliceKey);
 
 

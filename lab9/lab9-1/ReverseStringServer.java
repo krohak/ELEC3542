@@ -37,7 +37,7 @@ public class ReverseStringServer {
 			ObjectOutputStream out = new ObjectOutputStream(clientSocket.getOutputStream());
 			ObjectInputStream in = new ObjectInputStream(clientSocket.getInputStream());
 
-			String s = (String) in.readObject();
+			SealedObject s = (SealedObject)in.readObject();
 
 
 			String decryptedText = (String) bob.decrypt(s, bobKey);
@@ -47,7 +47,7 @@ public class ReverseStringServer {
 
 			SealedObject cipherObject = bob.encrypt(result, bobKey);
 
-			out.writeObject(String(cipherObject));
+			out.writeObject((cipherObject));
 			out.flush();
 
 			out.close();
