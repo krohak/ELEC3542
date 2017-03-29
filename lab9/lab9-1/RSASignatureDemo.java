@@ -17,16 +17,16 @@ public class RSASignatureDemo {
         RSASignature aliceRSA = new RSASignature();
         KeyPair aliceKeyPair = aliceRSA.genPubKeys();
         SignedObject signedObject = aliceRSA.sign(plainText, aliceKeyPair.getPrivate());
-        endTime = System.currentTimeMillis();
-        System.out.println("The time needed for generating the signature for keysize 3072 is " + (endTime-startTime) + " ms.");
+        //endTime = System.currentTimeMillis();
+        //System.out.println("The time needed for generating the signature for keysize 512 is " + (endTime-startTime) + " ms.");
 
 
         // Bob verifies the signature using Alice's public key
-        startTime = System.currentTimeMillis();
+      //  startTime = System.currentTimeMillis();
         RSASignature bobRSA = new RSASignature();
         boolean verifyResult = bobRSA.verifySignature(signedObject, aliceKeyPair.getPublic());
         endTime = System.currentTimeMillis();
-        System.out.println("The time needed for verifying the signature for keysize 3072 is " + (endTime-startTime) + " ms.");
+        System.out.println("The time needed for signing and verifying the RSA signature for keysize 512 is " + (endTime-startTime) + " ms.");
 
         if (verifyResult) {
             //System.out.println("Bob has verified the signed object.");
