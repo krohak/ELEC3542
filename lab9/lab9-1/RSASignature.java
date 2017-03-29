@@ -12,7 +12,7 @@ public class RSASignature {
     private int keySize;
 
     public RSASignature() throws Exception {
-        keySize = 1024; // Default key size of Sun
+        keySize = 512; // Default key size of Sun
     }
 
     public RSASignature(int size) throws Exception {

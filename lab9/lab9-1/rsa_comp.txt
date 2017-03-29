@@ -1,0 +1,12 @@
+The time needed for generating the signature for keysize 512 is 102 ms.
+The time needed for verifying the signature for keysize 512 is 1 ms.
+
+The time needed for generating the signature for keysize 1024 is 195 ms.
+The time needed for verifying the signature for keysize 1024 is 1 ms.
+
+The time needed for generating the signature for keysize 2048 is 1488 ms.
+The time needed for verifying the signature for keysize 2048 is 0 ms.
+
+The time needed for generating the signature for keysize 3072 is 1586 ms.
+The time needed for verifying the signature for keysize 3072 is 1 ms.
+
