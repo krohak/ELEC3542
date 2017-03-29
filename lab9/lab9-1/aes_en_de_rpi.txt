@@ -1,0 +1,2 @@
+The time needed for encryption for keysize 128 is 169 ms.
+The time needed for decryption for keysize 128 is 5 ms.
