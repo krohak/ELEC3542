@@ -1,5 +1,5 @@
-# assignment10-krohak
-assignment10-krohak created by GitHub Classroom
+# Homebridge Siri integration
+
 
 ## [Video](https://www.youtube.com/watch?v=86F3UJ7JBP0)
 
